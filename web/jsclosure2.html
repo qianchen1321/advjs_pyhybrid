@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>闭包的理解</title>
+    <style type="text/css">
+        h1{color: red}
+    </style>
+</head>
+<body>
+    <h1>这是上下文显示例js</h1><br/>
+    <script type="text/javascript">
+        function fn1() {
+            var a = 2;
+            function fn2(){
+                a++;
+                console.log(a);
+            }
+            return fn2;
+
+        }
+        var fx = fn1();
+        console.log('产生了闭包，但未执行');
+        fx();
+
+    </script>
+
+</body>
+</html>

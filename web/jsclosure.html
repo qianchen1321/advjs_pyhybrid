@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>闭包的理解</title>
+    <style type="text/css">
+        h1{color: red}
+    </style>
+</head>
+<body>
+    <h1>这是上下文显示例js</h1><br/>
+    <script type="text/javascript">
+        function fn1() {
+            var a = 2;
+            var b = 'abc';
+            function fn2(){
+                console.log(a);
+            }
+
+            console.log('内部函数调用前');
+            fn2();
+            console.log('内部函数已调用');
+
+        }
+        fn1();
+        console.log('haha@ please confirm excute fn2');
+
+    </script>
+
+</body>
+</html>

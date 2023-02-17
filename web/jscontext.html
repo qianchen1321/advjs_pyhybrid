@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上下文定义</title>
+    <style type="text/css">
+        h1{color: red}
+    </style>
+</head>
+<body>
+    <h1>这是上下文显示例js</h1><br/>
+    <script type="text/javascript">
+       /* console.log(a1, window.a1);
+        window.a2();
+        console.log(this);
+        var a1 = 3;
+        console.log(a1);
+
+        console.log("注意以下开始变量提升");
+        function a2() {
+            console.log('a2()')
+        };
+
+        fn(2, 3)
+        function fn(a1) {
+            console.log("注意a1是实参，这里应该答应传入的那个数组第一个值吧");
+            console.log(a1);
+            console.log("注意a2是函数定义，内部是变量名提升");
+            console.log(a2);
+            console.log("注意a3是函数内部函数定义，函数声明提升");
+            a3();
+            console.log("注意this是什么呀，作用域是fn函数对象，这个this是否依然是window");
+            console.log(this)
+            console.log("注意arguments是a1的值吧，这里打印含3的数组吗？");
+            console.log(arguments);
+            var a2 = 7;
+            function a3() {
+                console.log('a3()')
+            }
+        }
+*//*
+       function a() {
+       };
+
+       var a;
+
+       console.log(typeof a);
+
+        if(!(b in window)){
+            var b = 1;
+        }
+        console.log(b);
+    */
+        var c = 1
+        function c(c) {
+            console.log(c);
+            var c = 3
+        }
+        c(2);
+</script>
+
+</body>
+</html>
